@@ -1,0 +1,37 @@
+---
+transactions:
+
+- Test ID: "01"
+  Card Type: Visa
+  Card Number: 4788250000028291
+  AVS Zip: L6L2X9
+  CVD: 111
+  Amount: 1200
+
+- Test ID: "02"
+  Card Type: MC
+  Card Number: 5454545454545454
+  AVS Zip: 44444
+  CVD: 111
+  Amount: 1100
+
+- Test ID: "03"
+  Card Type: Amex
+  Card Number: 371449635398431
+  AVS Zip: 66666
+  CVD: 2222
+  Amount: 105500
+
+- Test ID: "04"
+  Card Type: DS
+  Card Number: 6011000995500000
+  AVS Zip: 77777
+  CVD: 
+  Amount: 1000
+
+- Test ID: "05"
+  Card Type: JCB
+  Card Number: 3566002020140006
+  AVS Zip: 33333
+  CVD: 123
+  Amount: 2900

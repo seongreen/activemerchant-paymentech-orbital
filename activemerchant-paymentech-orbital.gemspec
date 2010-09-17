@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{activemerchant-paymentech-orbital}
-  s.version = "0.2.1"
+  s.version = "0.2.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["John Corrigan"]
@@ -31,6 +31,8 @@ Gem::Specification.new do |s|
      "lib/active_merchant/billing/paymentech_orbital/request/new_order.rb",
      "lib/active_merchant/billing/paymentech_orbital/request/profile_management.rb",
      "lib/active_merchant/billing/paymentech_orbital/request/void.rb",
+     "lib/active_merchant/billing/paymentech_orbital/request/mark_for_capture.rb",
+     "lib/active_merchant/billing/paymentech_orbital/request/refund.rb",
      "lib/active_merchant/billing/paymentech_orbital/response.rb",
      "lib/activemerchant-paymentech-orbital.rb",
      "test/activemerchant-paymentech-orbital_test.rb",

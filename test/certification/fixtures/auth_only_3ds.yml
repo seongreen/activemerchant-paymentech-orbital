@@ -1,0 +1,101 @@
+---
+transactions:
+
+- Test ID: "01"
+  Card Type: Visa
+  Card Number: 4788250000028291
+  AVS Zip: 11111
+  CVD: 111
+  Amount: 3000
+  CAVV: AAABAIcJIoQDIzAgVAkiAAAAAAA=
+  ECI: 5
+
+- Test ID: "02"
+  Card Type: Visa
+  Card Number: 4788250000028291
+  AVS Zip: "L6L2X9"
+  CVD: 222
+  Amount: 3800
+  CAVV: AAABCCMRERI0VniQEhERAAAAAAA=
+  ECI: 5
+
+- Test ID: "03"
+  Card Type: Visa
+  Card Number: 4788250000028291
+  AVS Zip: 44444
+  CVD: 333
+  Amount: 4100
+  CAVV: AAABCZkRERI0VniQEhERAAAAAAA=
+  ECI: 5
+
+- Test ID: "04"
+  Card Type: Visa
+  Card Number: 4788250000028291
+  AVS Zip: 88888
+  CVD: 666
+  Amount: 1100
+  CAVV: BwAQCZkRERI0VniQEhERAAAAAAA=
+  ECI: 6
+
+- Test ID: "05"
+  Card Type: Visa
+  Card Number: 4788250000028291
+  AVS Zip: 55555
+  CVD: 111
+  Amount: 105500
+  CAVV: CAAQCZkRERI0VniQEhERAAAAAAA=
+  ECI: 6
+
+- Test ID: "06"
+  Card Type: Visa
+  Card Number: 4788250000028291
+  AVS Zip: 66666
+  CVD: 555
+  Amount: 7500
+  CAVV: BwABA4kRERI0VniQEhERAAAAAAA=
+  ECI: 6
+
+- Test ID: "07"
+  Card Type: Visa
+  Card Number: 4788250000028291
+  AVS Zip: 77777
+  CVD: 666
+  Amount: 1000
+  CAVV: CQABAGcRERI0VniQEhERAAAAAAA=
+  ECI: 5
+
+- Test ID: "08"
+  Card Type: Visa
+  Card Number: 4788250000028291
+  AVS Zip: 11111
+  CVD: 666
+  Amount: 4000
+  CAVV: 
+  ECI: 6
+
+- Test ID: "10"
+  Card Type: MC
+  Card Number: 5454545454545454
+  AVS Zip: 11111
+  CVD: 111
+  Amount: 3000
+  AAV: hsjuQljfl86bAAAAAACm9zU6aqY=
+  ECI: 5
+
+- Test ID: "12"
+  Card Type: MC
+  Card Number: 5454545454545454
+  AVS Zip: L6L2X9
+  CVD: 222
+  Amount: 3800
+  AAV: 
+  ECI: 6
+
+- Test ID: "13"
+  Card Type: MC
+  Card Number: 5454545454545454
+  AVS Zip: 44444
+  CVD: 333
+  Amount: 4100
+  AAV: Asju1ljfl86bAAAAAACm9zU6aqY=
+  ECI: 5

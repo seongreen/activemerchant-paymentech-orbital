@@ -21,7 +21,7 @@ module ActiveMerchant
           end
 
           def to_a
-            [ to_s, Time.now, merchant_id, order_id, industry_type,
+            [ to_s, Time.now, merchant_id, order_id, tx_ref_num, industry_type,
               money, currency_code, customer_ref_num, address[:phone],
               address[:name], full_street_address ]
           end
@@ -33,7 +33,7 @@ module ActiveMerchant
           delegate :login, :password, :merchant_id, 
             :bin, :terminal_id, :currency_code, 
             :currency_exponent, :customer_ref_num, 
-            :order_id, :to => :options
+            :order_id, :tx_ref_num, :to => :options
 
           def full_street_address
             "#{address[:address1]} #{address[:address2]}".strip

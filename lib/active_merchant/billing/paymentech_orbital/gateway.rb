@@ -36,8 +36,8 @@ module ActiveMerchant #:nodoc:
 
         # Headers
         self.headers = {
-          "MIME-Version" => "1.0",
-          "Content-Type" => "Application/PTI46",
+          "MIME-Version" => "1.1",
+          "Content-Type" => "Application/PTI49",
           "Content-transfer-encoding" => "text",
           "Request-number" => "1",
           "Document-type" => "Request"
@@ -47,10 +47,12 @@ module ActiveMerchant #:nodoc:
 
         def initialize(options = {})
           requires!(options, :login, :password, :merchant_id, :bin, :terminal_id)
-          @options = options.merge({
+
+          @options = {
             :currency_code => self.class.currency_code, 
             :currency_exponent => self.class.currency_exponent
-          })
+          }.merge(options)
+
           super
         end
 
@@ -66,8 +68,8 @@ module ActiveMerchant #:nodoc:
           commit('sale', @request)
         end
 
-        def refund(money, credit_card=nil, options={})
-          @request = Request::NewOrder.new("R", money, credit_card, options.merge(@options))
+        def refund(money, options={})
+          @request = Request::Refund.new(money, options.merge(@options))
 
           commit('refund', @request)
         end
@@ -82,6 +84,12 @@ module ActiveMerchant #:nodoc:
           @request = Request::Void.new(tx_ref_num, tx_ref_idx, money, options.merge(@options))
 
           commit('void', @request)
+        end
+
+        def capture(tx_ref_num, tx_ref_idx, money=nil, options={})
+          @request = Request::MarkForCapture.new(tx_ref_num, tx_ref_idx, money, options.merge(@options))
+
+          commit('capture', @request)
         end
 
         def end_of_day(options={})

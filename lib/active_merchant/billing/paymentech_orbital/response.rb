@@ -10,7 +10,7 @@ module ActiveMerchant
           :terminal_id, :card_brand, :account_num, 
           :order_id, :tx_ref_num, :tx_ref_idx, :proc_status,
           :approval_status, :resp_code, :AVSRespCode,
-          :CVV2RespCode, :auth_code, :status_msg, :resp_msg,
+          :CVV2RespCode,:CAVVRespCode, :auth_code, :status_msg, :resp_msg,
           :customer_ref_num, :customer_name, :profile_proc_status,
           :customer_profile_message, :resp_time, :batch_seq_num,
           :CCAccountNum, :customer_address_1, :customer_address_2,
@@ -34,7 +34,7 @@ module ActiveMerchant
             proc_success? && approved?
           when "Profile"
             profile_proc_success?
-          when "Reversal", "EndOfDay"
+          when "Reversal", "EndOfDay", "MarkForCapture"
             proc_success?
           else
             false
@@ -75,6 +75,9 @@ module ActiveMerchant
 
         def cvv2_resp_code
           send(:CVV2RespCode)
+        end
+        def cavv_resp_code
+          send(:CAVVRespCode)
         end
 
         def mb_cancel_date

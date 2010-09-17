@@ -29,6 +29,12 @@ Rake::TestTask.new(:remote) do |test|
   test.verbose = true
 end
 
+Rake::TestTask.new(:certification) do |test|
+  test.libs << 'test'
+  test.pattern = 'test/certification/**/*_test.rb'
+  test.verbose = true
+end
+
 begin
   require 'rcov/rcovtask'
   Rcov::RcovTask.new do |test|

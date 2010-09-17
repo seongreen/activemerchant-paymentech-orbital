@@ -1,0 +1,32 @@
+---
+transactions:
+
+- Test ID: "05"
+  Ref Test ID: "A-8"
+  Card Type: MC
+  Amount: 4100
+  Tx Ref Num: 4C6A453EDFE878AE463FD2A7B9D2E02CCD9A5476
+
+- Test ID: "09"
+  Ref Test ID: "A-15"
+  Card Type: Amex
+  Amount: 50000
+  Tx Ref Num: 4C6A4543E2E76EF60451468984A7628402EE54E4
+
+- Test ID: "10"
+  Ref Test ID: "A-16"
+  Card Type: Amex
+  Amount: 7500
+  Tx Ref Num: 4C6A454472241A48E012C5DE0FB2D6C2D5B65404
+
+- Test ID: "11"
+  Ref Test ID: "A-18"
+  Card Type: DS
+  Amount: 1000
+  Tx Ref Num: 4C6A454751ED3D44D9E6741E9B1DB61C4CA55421
+
+- Test ID: "12"
+  Ref Test ID: "A-21"
+  Card Type: JCB
+  Amount: 2900
+  Tx Ref Num: 4C6A454C762CBB6C7F21D4B2C554109B702B54E9

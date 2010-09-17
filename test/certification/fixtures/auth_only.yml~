@@ -1,0 +1,94 @@
+---
+transactions:
+
+- Test ID: "01"
+  Card Type: Visa
+  Card Number: 4788250000028291
+  AVS Zip: 11111
+  CVD: 111
+  Amount: "3000"
+
+- Test ID: "02"
+  Card Type: Visa
+  Card Number: 4788250000028291
+  AVS Zip: "L6L2X9"
+  CVD: 
+  Amount: "3801"
+
+- Test ID: "03"
+  Card Type: Visa
+  Card Number: 4788250000028291
+  AVS Zip: 66666
+  CVD: 
+  Amount: "000"
+
+- Test ID: "08"
+  Card Type: MC
+  Card Number: 5454545454545454
+  AVS Zip: "L6L2X9"
+  CVD: 
+  Amount: "4100"
+
+- Test ID: "09"
+  Card Type: MC
+  Card Number: 5454545454545454
+  AVS Zip: 88888
+  CVD: 666
+  Amount: 1102
+
+- Test ID: "10"
+  Card Type: MC
+  Card Number: 5454545454545454
+  AVS Zip: 88888
+  CVD: 
+  Amount: "000"
+
+- Test ID: "15"
+  Card Type: Amex
+  Card Number: 371449635398431
+  AVS Zip: "L6L2X9"
+  CVD: 
+  Amount: "105500"
+
+- Test ID: "16"
+  Card Type: Amex
+  Card Number: 371449635398431
+  AVS Zip: 66666
+  CVD: 2222
+  Amount: "7500"
+
+- Test ID: "17"
+  Card Type: Amex
+  Card Number: 371449635398431
+  AVS Zip: 22222
+  CVD: 
+  Amount: "000"
+
+- Test ID: "18"
+  Card Type: DS
+  Card Number: 6011000995500000
+  AVS Zip: 77777
+  CVD: 
+  Amount: 0110
+
+- Test ID: "19"
+  Card Type: DS
+  Card Number: 6011000995500000
+  AVS Zip: "L6L2X9"
+  CVD: 444
+  Amount: "6303"
+
+- Test ID: "20"
+  Card Type: DS
+  Card Number: 6011000995500000
+  AVS Zip: 11111
+  CVD: 
+  Amount: "000"
+
+- Test ID: "21"
+  Card Type: JSB
+  Card Number: 3566002020140006
+  AVS Zip: 33333
+  CVD: 
+  Amount: "2900"
+
